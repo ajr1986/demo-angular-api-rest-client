@@ -1,0 +1,31 @@
+<h1>Clients</h1>
+<div class="text-right">
+  <input type="button" routerLink="/clients/form" class="btn btn-success" value="Create">
+</div>
+<hr>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Last name</th>
+      <th scope="col">Date</th>
+      <th scope="col">Email</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let client of clients">
+      <td>{{ client.id }}</td>
+      <td>{{ client.name }}</td>
+      <td>{{ client.lastName }}</td>
+      <td>{{ client.date }}</td>
+      <td>{{ client.email }}</td>
+      <td>
+        <input type="button" class="btn btn-info" [routerLink]="['/clients/form', client.id]" value="edit">&nbsp;
+        <input type="button" class="btn btn-danger" value="delete" (click)="delete(client.id)">
+      </td>
+    </tr>
+  </tbody>
+</table>
