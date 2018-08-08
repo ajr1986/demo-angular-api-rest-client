@@ -1,4 +1,7 @@
-# ClientsApp
+# demo-angular-api-rest-client
+
+Angular app demo, simple CRUD.
+This project need https://github.com/ajr1986/demo-spring-boot-api-rest-backend as backend.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
