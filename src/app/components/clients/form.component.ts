@@ -11,7 +11,7 @@ import swal from 'sweetalert2';
 })
 export class FormComponent implements OnInit {
 
-  private client: Client = new Client();
+  client: Client = new Client();
 
   constructor(private clientService: ClientService, private router: Router, private activateRouter: ActivatedRoute) {
     this.loadClient();
