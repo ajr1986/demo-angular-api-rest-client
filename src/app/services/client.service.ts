@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
 })
 export class ClientService {
 
-  private url: string = 'http://localhost:8080/api/clients';
+  private url: string = 'https://demo-spring-boot-api-rest-back.herokuapp.com/api/clients';
   private httpHeaders = new HttpHeaders({
     'Content-type': 'application/json'
   })
